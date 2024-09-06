@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Race Animation</title>
+   <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #e0e0e0;
+}
+
+/* Race Track */
+.race-track {
+  position: relative;
+  width: 80%;
+  height: 300px;
+  background-color: #000 ;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 5px solid #000;
+
+}
+
+/* Car 1 */
+.car {
+  position: absolute;
+  top: 50px;
+  width: 100px;
+  height: 50px;
+  background-color: #000;
+  border-radius: 5px;
+  animation: race 4s linear infinite;
+}
+
+/* Car 2 */
+.car2 {
+    margin-top: 80px;
+  top: 100px;
+  width: 100px;
+  height: 50px;
+  animation: race2 6s linear infinite;
+}
+
+/* Keyframe animation for the race */
+@keyframes race {
+  0% {
+    left: -120px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes race2 {
+  0% {
+    left: -120px;
+  }
+  100% {
+    left: 100%;
+  }
+}
+   </style>
+</head>
+<body>
+
+  <!-- Car Race Track -->
+  <div class="race-track">
+    <div class="car car1">
+        <img src="car3.jpg" alt="" width="150px" height="120px">
+    </div>
+    <br>
+    <br>
+    <div class="car car2">
+        <img src="./car4.webp" alt="" width="200px" height="100px">
+    </div>
+  </div>
+
+</body>
+</html>
